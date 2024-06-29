@@ -62,7 +62,7 @@ do_action( 'user_registration_before_edit_profile_form_data', $user_id, $form_id
 						 * @param string Profile detail title content.
 						 * @return string modified profile detail title.
 						 */
-						apply_filters( 'user_registation_profile_detail_title', __( 'Profile Detail', 'user-registration' ) ) ); //PHPCS:ignore ?></h2>
+						apply_filters( 'user_registation_profile_detail_title', __( 'Thông tin tài khoản', 'user-registration' ) ) ); //PHPCS:ignore ?></h2>
 					<?php
 					if ( ! ur_option_checked( 'user_registration_disable_profile_picture', false ) ) {
 						?>
@@ -112,7 +112,7 @@ do_action( 'user_registration_before_edit_profile_form_data', $user_id, $form_id
 										 * @param string Message content to be modified.
 										 * @return string modified message.
 										 */
-										apply_filters( 'user_registration_upload_new_profile_image_message', esc_html__( 'Upload your new profile image.', 'user-registration' ) )
+										apply_filters( 'user_registration_upload_new_profile_image_message', esc_html__( 'Tải lên ảnh đại diện của bạn.', 'user-registration' ) )
 									);
 									?>
 										</strong></p>
@@ -146,7 +146,7 @@ do_action( 'user_registration_before_edit_profile_form_data', $user_id, $form_id
 											<input type="hidden" name="profile-default-image" value="<?php echo esc_url( $gravatar_image ); ?>" />
 											<button class="button profile-pic-remove" data-attachment-id="<?php echo esc_attr( get_user_meta( get_current_user_id(), 'user_registration_profile_pic_url', true ) ); ?>" style="<?php echo esc_attr( ( $gravatar_image === $image ) ? 'display:none;' : '' ); ?>"><?php echo esc_html__( 'Remove', 'user-registration' ); ?></php></button>
 
-											<button type="button" class="button user_registration_profile_picture_upload hide-if-no-js" style="<?php echo esc_attr( ( $gravatar_image !== $image ) ? 'display:none;' : '' ); ?>" ><?php echo esc_html__( 'Upload Picture', 'user-registration' ); ?></button>
+											<button type="button" class="button user_registration_profile_picture_upload hide-if-no-js" style="<?php echo esc_attr( ( $gravatar_image !== $image ) ? 'display:none;' : '' ); ?>" ><?php echo esc_html__( 'Tải ảnh lên', 'user-registration' ); ?></button>
 											<input type="file" id="ur-profile-pic" name="profile-pic" class="profile-pic-upload" accept="image/jpeg,image/gif,image/png" style="display:none" />
 											<?php
 										}
@@ -156,7 +156,7 @@ do_action( 'user_registration_before_edit_profile_form_data', $user_id, $form_id
 									<?php
 									if ( ! $profile_picture_url ) {
 										?>
-										<span><i><?php echo esc_html__( 'You can change your profile picture on', 'user-registration' ); ?> <a href="https://en.gravatar.com/"><?php esc_html_e( 'Gravatar', 'user-registration' ); ?></a></i></span>
+										<span><i><?php echo esc_html__( 'Bạn có thể thay đổi ảnh đại diện tại', 'user-registration' ); ?> <a href="https://en.gravatar.com/"><?php esc_html_e( 'Gravatar', 'user-registration' ); ?></a></i></span>
 									<?php } ?>
 								</header>
 							</div>

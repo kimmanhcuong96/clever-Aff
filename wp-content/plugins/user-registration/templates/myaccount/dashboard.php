@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <h2>
 	<?php
 	/* translators: %s - Users display name. */
-	esc_html_e( 'Welcome, {{display_name}}', 'user-registration' );
+	esc_html_e( 'Xin chào, {{display_name}}', 'user-registration' );
 	?>
 </h2>
 
@@ -49,14 +49,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p>
 <?php
 	/* translators: 1 profile details url, 2: change password url */
-	echo wp_kses_post( __( 'From your account dashboard you can edit your {{profile_details_link}} and {{edit_password_link}}.', 'user-registration' ) );
+	echo wp_kses_post( __( 'Bạn có thể chỉnh sửa hồ sơ của mình tại đây {{profile_details_link}} và {{edit_password_link}}.', 'user-registration' ) );
 ?>
 </p>
 
 <p>
 	<?php
 		/* translators: 1: user display name 2: logout url */
-		echo wp_kses_post( __( 'Not {{display_name}}? <strong>{{sign_out_link}}</strong>', 'user-registration' ) );
+		echo wp_kses_post( __( 'Không phải tài khoản của bạn? <strong>{{sign_out_link}}</strong>', 'user-registration' ) );
 	?>
 </p>
 

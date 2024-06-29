@@ -151,7 +151,7 @@ class UR_Shortcode_My_Account {
 
 			if ( isset( $wp->query_vars['user-logout'] ) ) {
 				/* translators: %s - Link to logout */
-				ur_add_notice( sprintf( __( 'Are you sure you want to log out?&nbsp;<a href="%s">Confirm and log out</a>', 'user-registration' ), ur_logout_url() ) );
+				ur_add_notice( sprintf( __( 'Bạn có chắc chắn muốn đăng xuất?&nbsp;<a href="%s">Xác nhận và đăng xuất</a>', 'user-registration' ), ur_logout_url() ) );
 			}
 
 			/**
@@ -411,7 +411,7 @@ class UR_Shortcode_My_Account {
 		/**
 		 * Filter to modify invalid username or email error message.
 		 */
-		$error_message = apply_filters( 'user_registration_invalid_username_or_email_error_message', __( 'Invalid username or email.', 'user-registration' ) );
+		$error_message = apply_filters( 'user_registration_invalid_username_or_email_error_message', __( 'Tên đăng nhập hoặc địa chỉ mail không đúng.', 'user-registration' ) );
 
 		if ( ! $user_data || ( is_multisite() && ! is_user_member_of_blog( $user_data->ID, get_current_blog_id() ) ) ) {
 			ur_add_notice( $error_message, 'error' );

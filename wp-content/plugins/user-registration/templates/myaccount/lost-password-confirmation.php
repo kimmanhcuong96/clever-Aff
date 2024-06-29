@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ur_print_notices();
-ur_print_notice( __( 'Password reset email has been sent.', 'user-registration' ) );
+ur_print_notice( __( 'Thư đặt lại mật khẩu đã được gửi tới địa chỉ mail đăng ký', 'user-registration' ) );
 ?>
 
 <p>
@@ -32,7 +32,7 @@ echo esc_html(
 	 * @param string message content for user registration lost password.
 	 * @return string message content of user registration lost password.
 	 */
-	apply_filters( 'user_registration_lost_password_message', esc_html__( 'A password reset email has been sent to the email address on file for your account, but may take several minutes to show up in your inbox. Please wait at least 10 minutes before attempting another reset.', 'user-registration' ) )
+	apply_filters( 'user_registration_lost_password_message', esc_html__( 'Email đặt lại mật khẩu đã được gửi đến địa chỉ email trong hồ sơ cho tài khoản của bạn nhưng có thể mất vài phút để hiển thị trong hộp thư đến của bạn. Vui lòng đợi ít nhất 10 phút trước khi thử thiết lập lại lần nữa.', 'user-registration' ) )
 );
 ?>
 	</p>

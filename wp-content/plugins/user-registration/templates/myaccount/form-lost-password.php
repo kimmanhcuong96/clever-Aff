@@ -34,13 +34,13 @@ ur_print_notices(); ?>
 					 * @param string message content to override the lost password message.
 					 * @return string message content for lost password.
 					 */
-					apply_filters( 'user_registration_lost_password_message', esc_html__( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'user-registration' ) )
+					apply_filters( 'user_registration_lost_password_message', esc_html__( 'Quên mật khẩu? Vui lòng nhập tên đăng nhập hoặc email. Bạn sẽ nhận được link đặt lại mật khẩu tại địa chỉ email đã đăng ký', 'user-registration' ) )
 				);
 				?>
 					</p>
 
 				<p class="user-registration-form-row user-registration-form-row--first form-row form-row-first">
-					<label for="user_login"><?php esc_html_e( 'Username or email', 'user-registration' ); ?></label>
+					<label for="user_login"><?php esc_html_e( 'Tên đăng nhập hoặc email', 'user-registration' ); ?></label>
 					<input class="user-registration-Input user-registration-Input--text input-text" type="text" name="user_login" id="user_login" />
 				</p>
 
@@ -70,7 +70,7 @@ ur_print_notices(); ?>
 						 * @param string text for lost password button.
 						 * @return string text for lost password button.
 						 */
-						apply_filters( 'user_registration_lost_password_button_text', __( 'Reset password', 'user-registration' ) )
+						apply_filters( 'user_registration_lost_password_button_text', __( 'Đặt lại mật khẩu', 'user-registration' ) )
 					);
 					?>
 						" />

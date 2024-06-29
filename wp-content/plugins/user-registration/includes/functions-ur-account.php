@@ -117,10 +117,10 @@ function ur_get_account_menu_items() {
 	);
 
 	$items = array(
-		'dashboard'     => __( 'Dashboard', 'user-registration' ),
-		'edit-profile'  => __( 'Profile Details', 'user-registration' ),
-		'edit-password' => __( 'Change Password', 'user-registration' ),
-		'user-logout'   => __( 'Logout', 'user-registration' ),
+		'dashboard'     => __( 'Bảng điều khiển', 'user-registration' ),
+		'edit-profile'  => __( 'Thông tin tài khoản', 'user-registration' ),
+		'edit-password' => __( 'Thay đổi mật khẩu', 'user-registration' ),
+		'user-logout'   => __( 'Đăng xuất', 'user-registration' ),
 	);
 
 	$user_id = get_current_user_id();

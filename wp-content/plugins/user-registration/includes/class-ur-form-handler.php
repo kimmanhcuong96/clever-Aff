@@ -166,7 +166,7 @@ class UR_Form_Handler {
 			/**
 			 * Filter to modify the profile update success message.
 			 */
-			$message = apply_filters( 'user_registration_profile_update_success_message', __( 'User profile updated successfully.', 'user-registration' ) );
+			$message = apply_filters( 'user_registration_profile_update_success_message', __( 'Cập nhật tài khoản thành công.', 'user-registration' ) );
 
 			if ( $email_updated ) {
 				self::send_confirmation_email( $user, $pending_email, $form_id );
@@ -408,7 +408,7 @@ class UR_Form_Handler {
 			ur_add_notice( __( 'New passwords do not match.', 'user-registration' ), 'error' );
 			$save_pass = false;
 		} elseif ( ! $bypass_current_password && ! wp_check_password( $pass_cur, $current_user->user_pass, $current_user->ID ) ) {
-			ur_add_notice( __( 'Your current password is incorrect.', 'user-registration' ), 'error' );
+			ur_add_notice( __( 'Mật khẩu hiện tại không đúng', 'user-registration' ), 'error' );
 			$save_pass = false;
 		} elseif ( wp_check_password( $pass1, $current_user->user_pass, $current_user->ID ) && $current_user ) {
 			ur_add_notice( __( 'New password must not be same as old password', 'user-registration' ), 'error' );

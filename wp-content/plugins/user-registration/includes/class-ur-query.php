@@ -69,13 +69,13 @@ class UR_Query {
 	public function get_endpoint_title( $endpoint ) {
 		switch ( $endpoint ) {
 			case 'edit-password':
-				$title = __( 'Change Password', 'user-registration' );
+				$title = __( 'Đổi mật khẩu', 'user-registration' );
 				break;
 			case 'edit-profile':
-				$title = __( 'Profile Details', 'user-registration' );
+				$title = __( 'Thông tin tài khoản', 'user-registration' );
 				break;
 			case 'ur-lost-password':
-				$title = __( 'Lost password', 'user-registration' );
+				$title = __( 'Quên mật khẩu', 'user-registration' );
 				break;
 			default:
 				$title = '';

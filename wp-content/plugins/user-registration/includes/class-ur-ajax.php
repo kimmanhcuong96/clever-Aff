@@ -447,7 +447,7 @@ class UR_AJAX {
 			/**
 			 * Filter to modify the profile update success message.
 			*/
-			$message = apply_filters( 'user_registration_profile_update_success_message', __( 'User profile updated successfully.', 'user-registration' ) );
+			$message = apply_filters( 'user_registration_profile_update_success_message', __( 'Cập nhật tài khoản thành công.', 'user-registration' ) );
 			/**
 			 * Action to modify the save profile details.
 			 *
