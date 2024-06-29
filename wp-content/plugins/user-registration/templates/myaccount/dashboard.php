@@ -17,55 +17,59 @@
  * @version 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
-?>
 
-<h2>
+$PRE_FIX_USER_ID = 'AFF10';
+	?>
+
+<h2 style="margin-bottom: 10px;">
 	<?php
 	/* translators: %s - Users display name. */
-	esc_html_e( 'Xin chào, {{display_name}}', 'user-registration' );
+	esc_html_e('Xin chào, {{display_name}}', 'user-registration');
 	?>
 </h2>
+
+<div style="margin-bottom: 10px; font-weight: bold;">ID: <?php echo ($PRE_FIX_USER_ID . get_current_user_id()) ?></div>
 
 <div class='user-registration-profile-header'>
 	<div class='user-registration-img-container'>
 		<?php
-		if ( ! ur_option_checked( 'user_registration_disable_profile_picture', false ) ) {
+		if (!ur_option_checked('user_registration_disable_profile_picture', false)) {
 
 			?>
-					{{profile_pic_box}}
-				<?php } ?>
+			{{profile_pic_box}}
+		<?php } ?>
 
 	</div>
-	<header>
-		<h3>
-		{{full_name}}
-			</h3>
-	</header>
+	<!-- <header>
+		<h3 style="margin-top: 10px;">
+			{{full_name}}
+		</h3>
+	</header> -->
 </div>
 
 <p>
-<?php
+	<?php
 	/* translators: 1 profile details url, 2: change password url */
-	echo wp_kses_post( __( 'Bạn có thể chỉnh sửa hồ sơ của mình tại đây {{profile_details_link}} và {{edit_password_link}}.', 'user-registration' ) );
-?>
+	echo wp_kses_post(__('Bạn có thể chỉnh sửa hồ sơ của mình tại đây {{profile_details_link}} và {{edit_password_link}}.', 'user-registration'));
+	?>
 </p>
 
 <p>
 	<?php
-		/* translators: 1: user display name 2: logout url */
-		echo wp_kses_post( __( 'Không phải tài khoản của bạn? <strong>{{sign_out_link}}</strong>', 'user-registration' ) );
+	/* translators: 1: user display name 2: logout url */
+	echo wp_kses_post(__('Không phải tài khoản của bạn? <strong>{{sign_out_link}}</strong>', 'user-registration'));
 	?>
 </p>
 
 <?php
-	/**
-	 * My Account dashboard.
-	 *
-	 * @since 2.6.0
-	 */
-	do_action( 'user_registration_account_dashboard' );
+/**
+ * My Account dashboard.
+ *
+ * @since 2.6.0
+ */
+do_action('user_registration_account_dashboard');
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
