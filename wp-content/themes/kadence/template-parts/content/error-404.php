@@ -18,8 +18,11 @@ namespace Kadence;
 			do_action('kadence_404_before_inner_content');
 
 			// get_template_part('template-parts/content/page_header'); ?>
-			<p style="font-size: xx-large;font-weight: bold;">
+			<p style="font-size: xx-large;font-weight: bold; margin-bottom: 10px;">
 				<?php esc_html_e('Bạn chưa đăng ký khóa học này', 'kadence'); ?>
+			</p>
+			<p style="padding: 5px; margin-top: 0px;">
+				<?php esc_html_e(' Vui lòng đăng ký khóa học để có thể tham gia.', 'kadence'); ?>
 			</p>
 			<p>
 				<?php esc_html_e('Tìm kiếm khóa học khác tại đây', 'kadence'); ?>
