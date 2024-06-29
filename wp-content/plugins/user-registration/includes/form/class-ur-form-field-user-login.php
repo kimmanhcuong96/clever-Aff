@@ -72,7 +72,7 @@ class UR_Form_Field_User_Login extends UR_Form_Field {
 		if ( username_exists( $username ) ) {
 			$message = array(
 				/* translators: %s - validation message */
-				$label       => sprintf( __( 'Username already exists.', 'user-registration' ) ),
+				$label       => sprintf( __( 'Tên đăng nhập đã tồn tại. Vui lòng dùng tên đăng nhập khác.', 'user-registration' ) ),
 				'individual' => true,
 			);
 			add_filter(
