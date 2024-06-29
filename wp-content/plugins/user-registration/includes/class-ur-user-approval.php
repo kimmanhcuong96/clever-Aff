@@ -204,12 +204,12 @@ class UR_User_Approval {
 					return $user;
 					break;
 				case UR_Admin_User_Manager::PENDING:
-					$message = '<strong>' . __( 'ERROR:', 'user-registration' ) . '</strong> ' . __( 'Your account is still pending approval.', 'user-registration' );
+					$message = '<strong>' . __( 'Cảnh báo:', 'user-registration' ) . '</strong> ' . __( 'Tài khoản của bạn đang được chờ cấp quyền.', 'user-registration' );
 
 					return new WP_Error( 'pending_approval', $message );
 					break;
 				case UR_Admin_User_Manager::DENIED:
-					$message = '<strong>' . __( 'ERROR:', 'user-registration' ) . '</strong> ' . __( 'Your account has been denied.', 'user-registration' );
+					$message = '<strong>' . __( 'Cảnh báo:', 'user-registration' ) . '</strong> ' . __( 'Tài khoản của bạn bị từ chối cấp quyền', 'user-registration' );
 
 					return new WP_Error( 'denied_access', $message );
 					break;
@@ -233,7 +233,7 @@ class UR_User_Approval {
 				case UR_Admin_User_Manager::PENDING:
 					$user_email_status = get_user_meta( $user->ID, 'ur_confirm_email', true );
 					if ( ur_string_to_bool( $user_email_status ) ) {
-						$message = '<strong>' . __( 'ERROR:', 'user-registration' ) . '</strong> ' . __( 'Your account is still pending approval.', 'user-registration' );
+						$message = '<strong>' . __( 'Cảnh báo:', 'user-registration' ) . '</strong> ' . __( 'Tài khoản của bạn đang chờ được cấp quyền.', 'user-registration' );
 						return new WP_Error( 'pending_approval', $message );
 					} else {
 						$url      = (!empty($_SERVER['HTTPS'])) ? 'https://' . $_SERVER['SERVER_NAME'] : 'http://' . $_SERVER['SERVER_NAME']; //phpcs:ignore
@@ -246,12 +246,12 @@ class UR_User_Approval {
 						$url = substr( $url, 0, strpos( $url, '?' ) );
 						$url = wp_nonce_url( $url . '?ur_resend_id=' . crypt_the_string( $user->ID . '_' . time(), 'e' ) . '&ur_resend_token=true', 'ur_resend_token' );
 						/* translators: %s - Resend Verification Link. */
-						$message = '<strong>' . esc_html__( 'ERROR:', 'user-registration' ) . '</strong> ' . sprintf( __( 'Your account is still pending approval. Verify your email by clicking on the link sent to your email. %s', 'user-registration' ), '<a id="resend-email" href="' . esc_url( $url ) . '">' . __( 'Resend Verification Link', 'user-registration' ) . '</a>' );
+						$message = '<strong>' . esc_html__( 'Cảnh báo:', 'user-registration' ) . '</strong> ' . sprintf( __( 'Tài khoản của bạn đang chờ được cấp quyền. Xác nhận link được gửi tới địa chỉ email của bạn. %s', 'user-registration' ), '<a id="resend-email" href="' . esc_url( $url ) . '">' . __( 'Gửi lại link xác thực', 'user-registration' ) . '</a>' );
 						return new WP_Error( 'user_email_not_verified', $message );
 					}
 					break;
 				case UR_Admin_User_Manager::DENIED:
-					$message = '<strong>' . __( 'ERROR:', 'user-registration' ) . '</strong> ' . __( 'Your account has been denied.', 'user-registration' );
+					$message = '<strong>' . __( 'Cảnh báo:', 'user-registration' ) . '</strong> ' . __( 'Tài khoản của bạn bị từ chối cấp quyền.', 'user-registration' );
 
 					return new WP_Error( 'denied_access', $message );
 					break;
@@ -281,7 +281,7 @@ class UR_User_Approval {
 			// if login option is email_confirmation but admin denies user.
 
 			if ( UR_Admin_User_Manager::DENIED === (int) $status['user_status'] ) {
-				$message = '<strong>' . __( 'ERROR:', 'user-registration' ) . '</strong> ' . __( 'Your account has been denied.', 'user-registration' );
+				$message = '<strong>' . __( 'Cảnh báo:', 'user-registration' ) . '</strong> ' . __( 'Tài khoản của bạn bị từ chối cấp quyền', 'user-registration' );
 
 				return new WP_Error( 'denied_access', $message );
 			}
