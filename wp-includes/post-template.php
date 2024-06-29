@@ -41,7 +41,9 @@ function get_the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctio
  *                     current post title if `$display` is false.
  */
 function the_title( $before = '', $after = '', $display = true ) {
+	$PRIVATE_STRING = "Private: ";
 	$title = get_the_title();
+	$title = str_replace($PRIVATE_STRING, "", $title);
 
 	if ( strlen( $title ) === 0 ) {
 		return;
