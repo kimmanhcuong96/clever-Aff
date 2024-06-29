@@ -497,7 +497,7 @@ class UR_Form_Validation extends UR_Validation {
 		}
 
 		if ( $password_value === $email_value || $password_value === $username_value ) {
-			array_push( $this->response_array, __( 'Password should not match with Username or Email address.', 'user-registration' ) );
+			array_push( $this->response_array, __( 'Mật khẩu cần khác tên đăng nhập hoặc email.', 'user-registration' ) );
 		}
 	}
 
