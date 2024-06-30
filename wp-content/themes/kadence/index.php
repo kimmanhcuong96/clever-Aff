@@ -24,7 +24,8 @@ kadence()->print_styles('kadence-content');
 		<div class="cus-item">
 			<div>
 				<a href="<?php echo esc_url(home_url('/khoa-hoc-affiliate-thuc-chien')); ?>">
-					<img src=<?php echo get_template_directory_uri() . '/assets/images/subject/khoa-hoc-affilliate.png'; ?> alt="" height="275" width="275" />
+					<img src=<?php echo get_site_url() . '/wp-content/uploads/subject/khoa-hoc-affilliate.png'; ?> alt=""
+						height="275" width="275" />
 				</a>
 				<div style="display: block;">
 					<a href="<?php echo esc_url(home_url('/khoa-hoc-affiliate-thuc-chien')); ?>">
@@ -35,8 +36,8 @@ kadence()->print_styles('kadence-content');
 		</div>
 		<div class="cus-item">
 			<div>
-				<a href="<?php echo esc_url(home_url('/khoa-hoc-mmo-nang-cao')); ?>"><img src=<?php echo get_template_directory_uri() . '/assets/images/subject/khoa-hoc-mmo-nang-cao.png'; ?> alt=""
-						height="275" width="275" /></a>
+				<a href="<?php echo esc_url(home_url('/khoa-hoc-mmo-nang-cao')); ?>"><img src=<?php echo get_site_url() . '/wp-content/uploads/subject/khoa-hoc-mmo-nang-cao.png'; ?> alt="" height="275"
+						width="275" /></a>
 				<div style="display: block;">
 					<a href="<?php echo esc_url(home_url('/khoa-hoc-mmo-nang-cao')); ?>">
 						Khóa học MMO nâng cao
@@ -46,8 +47,8 @@ kadence()->print_styles('kadence-content');
 		</div>
 		<div class="cus-item">
 			<div>
-				<a href="<?php echo esc_url(home_url('/khoa-hoc-thiet-ke-canva')); ?>"><img src=<?php echo get_template_directory_uri() . '/assets/images/subject/thiet-ke-canva.png'; ?> alt=""
-						height="275" width="275" /></a>
+				<a href="<?php echo esc_url(home_url('/khoa-hoc-thiet-ke-canva')); ?>"><img src=<?php echo get_site_url() . '/wp-content/uploads/subject/thiet-ke-canva.png'; ?> alt="" height="275"
+						width="275" /></a>
 				<div style="display: block;">
 					<a href="<?php echo esc_url(home_url('/khoa-hoc-thiet-ke-canva')); ?>">
 						Khóa học thiết kế Canva
@@ -57,8 +58,8 @@ kadence()->print_styles('kadence-content');
 		</div>
 		<div class="cus-item">
 			<div>
-				<a href="<?php echo esc_url(home_url('/khoa-hoc-air-drop-coin')); ?>"><img src=<?php echo get_template_directory_uri() . '/assets/images/subject/khoa-hoc-airdrop-crypto.png'; ?> alt=""
-						height="275" width="275" /></a>
+				<a href="<?php echo esc_url(home_url('/khoa-hoc-air-drop-coin')); ?>"><img src=<?php echo get_site_url() . '/wp-content/uploads/subject/khoa-hoc-airdrop-crypto.png'; ?> alt="" height="275"
+						width="275" /></a>
 				<div style="display: block;">
 					<a href="<?php echo esc_url(home_url('/khoa-hoc-air-drop-coin')); ?>">
 						Khóa học airdrop tiền mã hóa
@@ -68,8 +69,8 @@ kadence()->print_styles('kadence-content');
 		</div>
 		<div class="cus-item">
 			<div>
-				<a href="<?php echo esc_url(home_url('/khoa-hoc-lap-trinh-web-co-ban')); ?>"><img src=<?php echo get_template_directory_uri() . '/assets/images/subject/khoa-hoc-lap-trinh-web-co-ban.png'; ?>
-						alt="" height="275" width="275" /></a>
+				<a href="<?php echo esc_url(home_url('/khoa-hoc-lap-trinh-web-co-ban')); ?>"><img src=<?php echo get_site_url() . '/wp-content/uploads/subject/khoa-hoc-lap-trinh-web-co-ban.png'; ?> alt=""
+						height="275" width="275" /></a>
 				<div style="display: block;">
 					<a href="<?php echo esc_url(home_url('/khoa-hoc-lap-trinh-web-co-ban')); ?>">
 						Khóa học lập trình cơ bản
@@ -79,8 +80,8 @@ kadence()->print_styles('kadence-content');
 		</div>
 		<div class="cus-item">
 			<div>
-				<a href="<?php echo esc_url(home_url('/khoa-hoc-lap-trinh-web-chuyen-sau')); ?>"><img src=<?php echo get_template_directory_uri() . '/assets/images/subject/khoa-hoc-lap-trinh-web-nang-cao.png'; ?>
-						alt="" height="275" width="275" /></a>
+				<a href="<?php echo esc_url(home_url('/khoa-hoc-lap-trinh-web-chuyen-sau')); ?>"><img src=<?php echo get_site_url() . '/wp-content/uploads/subject/khoa-hoc-lap-trinh-web-nang-cao.png'; ?> alt=""
+						height="275" width="275" /></a>
 				<div style="display: block;">
 					<a href="<?php echo esc_url(home_url('/khoa-hoc-lap-trinh-web-chuyen-sau')); ?>">
 						Khóa học lập trình chuyên sâu
