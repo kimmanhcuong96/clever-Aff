@@ -7,16 +7,24 @@
 
 namespace Kadence;
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
 get_header();
 
-kadence()->print_styles( 'kadence-content' );
+kadence()->print_styles('kadence-content');
 /**
  * Hook for everything, makes for better elementor theming support.
  */
-do_action( 'kadence_single' );
+do_action('kadence_single');
 
 get_footer();
+
+?>
+
+<style>
+	.entry-header {
+		min-height: 150px !important;
+	}
+</style>
