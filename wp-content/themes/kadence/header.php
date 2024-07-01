@@ -22,6 +22,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<?php wp_head(); ?>
+	<style>
+		.site-header-row-container-inner{
+/* 			 background: url("https://cleverads.vn/storage/images/basic/1605717649-bg-footer.jpg") no-repeat center / cover; */
+		}
+		.kadence-svg-iconset{
+			color: ghostwhite;
+		}
+		.site-title-wrap .site-title{
+			color: white;
+		}
+	</style>
 </head>
 
 <body <?php body_class(); ?>>

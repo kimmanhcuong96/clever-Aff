@@ -37,4 +37,15 @@ do_action( 'kadence_after_content' );
 
 <?php wp_footer(); ?>
 </body>
+
+<style>
+.site-footer-wrap {
+                background: url("https://cleverads.vn/storage/images/basic/1605717649-bg-footer.jpg") no-repeat center / cover;
+				margin-top: 100px;
+            }
+	
+	.footer-html-inner{
+		color: rgb(255, 255, 255);
+	}
+</style>
 </html>
