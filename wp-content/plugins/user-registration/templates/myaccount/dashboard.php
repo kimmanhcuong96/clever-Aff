@@ -53,7 +53,7 @@ $PRE_FIX_USER_ID = 'AFF10';
 <p>
 	<?php
 	/* translators: 1 profile details url, 2: change password url */
-	echo wp_kses_post(__('Bạn có thể chỉnh sửa hồ sơ của mình tại đây {{profile_details_link}} và {{edit_password_link}}.', 'user-registration'));
+	echo wp_kses_post(__('Bạn có thể chỉnh sửa hồ sơ của mình tại {{profile_details_link}} và {{edit_password_link}}.', 'user-registration'));
 	?>
 </p>
 
