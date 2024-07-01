@@ -533,7 +533,7 @@ do_action( 'user_registration_before_edit_profile_form_data', $user_id, $form_id
 								 * @param string Text content to be modified.
 								 * @return string button text.
 								 */
-								apply_filters( 'user_registration_profile_update_button', __( 'Save changes', 'user-registration' ) ) ); //PHPCS:ignore?></button>
+								apply_filters( 'user_registration_profile_update_button', __( 'Lưu thay đổi', 'user-registration' ) ) ); //PHPCS:ignore?></button>
 							<?php
 						} else {
 							wp_nonce_field( 'save_profile_details' );
@@ -547,7 +547,7 @@ do_action( 'user_registration_before_edit_profile_form_data', $user_id, $form_id
 								 * @param string text content for button.
 								 * @return string button text.
 								 */
-								apply_filters( 'user_registration_profile_update_button', __( 'Save changes', 'user-registration' ) ) );//PHPCS:ignore ?>" />
+								apply_filters( 'user_registration_profile_update_button', __( 'Lưu thay đổi', 'user-registration' ) ) );//PHPCS:ignore ?>" />
 							<input type="hidden" name="action" value="save_profile_details" />
 							<?php
 						}
